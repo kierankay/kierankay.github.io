@@ -20,7 +20,7 @@
   
   /* Container around content */
   .resume-container {
-    padding: 10px 40px;
+    padding: 8px 40px;
     position: relative;
     background-color: inherit;
     width: 50%;
@@ -55,7 +55,7 @@
     content: " ";
     height: 0;
     position: absolute;
-    top: 22px;
+    top: 18px;
     width: 0;
     z-index: 1;
     right: 30px;
@@ -69,7 +69,7 @@
     content: " ";
     height: 0;
     position: absolute;
-    top: 22px;
+    top: 18px;
     width: 0;
     z-index: 1;
     left: 30px;
@@ -83,14 +83,19 @@
     left: -13px;
   }
   
-  /* The actual content */
+  /* The actual content in all containers */
   .resume-content {
-    padding: 20px 30px;
-    background-color: #474e5d;
-    color: white;
+    padding: 0px 30px;
+    background-color: inherit;
+    color: #474e5d;
     position: relative;
     border-radius: 6px;
   }
+
+    /* The actual content in left containers*/
+    .left > .resume-content {
+        text-align: right;
+      }
   
   /* Media queries - Responsive timeline on screens less than 600px wide */
   @media screen and (max-width: 600px) {
